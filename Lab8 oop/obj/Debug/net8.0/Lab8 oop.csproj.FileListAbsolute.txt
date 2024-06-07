@@ -1,0 +1,14 @@
+C:\1 OTHER\LABS\1.2\Lab8 oop\Lab8 oop\bin\Debug\net8.0\Lab8 oop.exe
+C:\1 OTHER\LABS\1.2\Lab8 oop\Lab8 oop\bin\Debug\net8.0\Lab8 oop.deps.json
+C:\1 OTHER\LABS\1.2\Lab8 oop\Lab8 oop\bin\Debug\net8.0\Lab8 oop.runtimeconfig.json
+C:\1 OTHER\LABS\1.2\Lab8 oop\Lab8 oop\bin\Debug\net8.0\Lab8 oop.dll
+C:\1 OTHER\LABS\1.2\Lab8 oop\Lab8 oop\bin\Debug\net8.0\Lab8 oop.pdb
+C:\1 OTHER\LABS\1.2\Lab8 oop\Lab8 oop\obj\Debug\net8.0\Lab8 oop.GeneratedMSBuildEditorConfig.editorconfig
+C:\1 OTHER\LABS\1.2\Lab8 oop\Lab8 oop\obj\Debug\net8.0\Lab8 oop.AssemblyInfoInputs.cache
+C:\1 OTHER\LABS\1.2\Lab8 oop\Lab8 oop\obj\Debug\net8.0\Lab8 oop.AssemblyInfo.cs
+C:\1 OTHER\LABS\1.2\Lab8 oop\Lab8 oop\obj\Debug\net8.0\Lab8 oop.csproj.CoreCompileInputs.cache
+C:\1 OTHER\LABS\1.2\Lab8 oop\Lab8 oop\obj\Debug\net8.0\Lab8 oop.dll
+C:\1 OTHER\LABS\1.2\Lab8 oop\Lab8 oop\obj\Debug\net8.0\refint\Lab8 oop.dll
+C:\1 OTHER\LABS\1.2\Lab8 oop\Lab8 oop\obj\Debug\net8.0\Lab8 oop.pdb
+C:\1 OTHER\LABS\1.2\Lab8 oop\Lab8 oop\obj\Debug\net8.0\Lab8 oop.genruntimeconfig.cache
+C:\1 OTHER\LABS\1.2\Lab8 oop\Lab8 oop\obj\Debug\net8.0\ref\Lab8 oop.dll

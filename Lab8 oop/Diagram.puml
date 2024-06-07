@@ -1,0 +1,108 @@
+@startuml
+
+class Player {
+    -String Name
+    -String Surname
+    -String Date
+    -String Status
+    -String HealthStatus
+    -String Salary
+}
+
+class Games {
+    -String Date
+    -String Location
+    -int Spectators
+    -String Result
+    -List<Player> Players
+}
+
+class Stadium {
+    -String Name
+    -int Capacity
+    -decimal PricePerSeat
+    -List<Games> Games
+}
+
+class PlayerControl {
+    -List<Player> _players
+    +PlayerControl()
+    +void AddPlayer()
+    +void DeletePlayer()
+    +void ChangePlayerData()
+    +void ViewPlayerData()
+    +void ShowPlayersList()
+    +List<Player> LoadPlayers()
+    +void SavePlayers(List<Player> playersToSave)
+}
+
+class GameControl {
+    -List<Games> _games
+    +GameControl()
+    +void AddGame()
+    +void DeleteGame()
+    +void ChangeGamesData()
+    +void AddPlayerToGame(Games game)
+    +void RemovePlayerFromGame(Games game)
+    +void ViewGamesData()
+    +void ShowGamesList()
+    +List<Games> LoadGames()
+    +void SaveGames(List<Games> gamesToSave)
+    +List<Player> LoadPlayers()
+}
+
+class StadiumControl {
+    -List<Stadium> _stadiums
+    -List<Games> _games
+    ____
+    +StadiumControl()
+    -void ShowMenu()
+    -void AddStadium()
+    -void AddGameToStadium(Stadium stadium)
+    -void DeleteStadium()
+    -void ChangeStadiumData()
+    -void ShowStadiumsData()
+    -void ShowStadiumsList()
+    -List<Stadium> LoadStadiums()
+    -void SaveStadiums(List<Stadium> stadiumsToSave)
+    -List<Games> LoadGames()
+}
+
+class Search {
+    -List<Player> _players
+    -List<Games> _games
+    -List<Stadium> _stadiums
+    ____
+    +Search()
+    -void ShowMenu()
+    -void SearchPlayerByName()
+    -void SearchGameByDate()
+    -void SearchStadiumByName()
+    -List<Player> LoadPlayers()
+    -List<Games> LoadGames()
+    -List<Stadium> LoadStadiums()
+}
+
+class Program {
+    +static void Main(string[] args)
+}
+
+Program --> PlayerControl
+Program --> GameControl
+Program --> StadiumControl
+Program --> Search
+
+PlayerControl --> Player : manages
+GameControl --> Games : manages
+Games --> Player : has
+Stadium --> Games : hosts
+
+StadiumControl --> Stadium
+StadiumControl --> Games
+Stadium --> Games
+Games --> Player
+Search --> Player
+Search --> Games
+Search --> Stadium
+
+@enduml
